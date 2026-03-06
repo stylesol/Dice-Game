@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class dice
 {
     private final int MAX = 6; //number of sides of dice
-    private int roll; 
+    public int roll; 
     
     
     // this is what runs the constructor
@@ -18,7 +18,8 @@ public class dice
     
     //this is where it rolls
     public void roll() {
-        roll = (int)(Math.random() * MAX);
+        roll = (int)(Math.random() * MAX + 1);
+        // the +1 means that it cant roll a zero
     }
     
     // this returns the number
